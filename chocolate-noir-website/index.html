@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chocolate Noir | Brownies & Cookies in Lahore</title>
+<link rel="icon" href="images/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#top"><img src="images/logo.png" alt="Chocolate Noir logo"><span>Chocolate Noir</span></a>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#how">How to Order</a>
+    <a href="#about">About</a>
+    <button class="cart-btn" id="openCart">🛒 Cart (<span id="count">0</span>)</button>
+  </nav>
+</header>
+
+<div class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>Chocolate<br>Noir</h1>
+      <p>Fresh, homemade brownies and cookies, baked with love and delivered to your door anywhere in Lahore.</p>
+      <a class="btn" href="#menu">Order Now</a>
+    </div>
+    <img class="hero-img" src="images/brownie-cutout.png" alt="Chocolate brownie">
+  </div>
+</div>
+
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="grid" id="products"></div>
+</section>
+
+<section id="how">
+  <h2>How It Works</h2>
+  <div class="how">
+    <div class="step"><b>01</b>Pick your treats and add them to the cart</div>
+    <div class="step"><b>02</b>Checkout with your name, phone and Lahore address</div>
+    <div class="step"><b>03</b>Your order goes to Hashir on WhatsApp</div>
+    <div class="step"><b>04</b>Delivered to you via inDrive. Cash on delivery</div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About the Creator</h2>
+  <p>Hi, I'm Hashir, the baker behind Chocolate Noir. Every brownie and cookie is made in small batches with real chocolate. Follow along on Instagram to see what's fresh out of the oven.</p>
+  <br>
+  <!-- Replace the link below with Hashir's real Instagram -->
+  <a class="btn" href="https://instagram.com/" target="_blank" rel="noopener">Follow on Instagram</a>
+</section>
+
+<footer>© <span id="yr"></span> Chocolate Noir · Delivery in Lahore only · Cash on delivery</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer">
+  <button class="close" id="closeCart" aria-label="Close">×</button>
+  <h2>Your Cart</h2>
+  <div id="items"></div>
+  <div id="checkout">
+    <div class="total"><span>Total</span><span id="total">Rs 0</span></div>
+    <label for="name">Your name</label>
+    <input id="name" placeholder="e.g. Ali Khan">
+    <label for="phone">Your phone number</label>
+    <input id="phone" type="tel" placeholder="03XX XXXXXXX">
+    <label for="address">Delivery address (Lahore)</label>
+    <textarea id="address" rows="3" placeholder="House #, street, area"></textarea>
+    <div class="note">💵 Cash on delivery only · 📍 Lahore only</div>
+    <button class="btn" id="checkoutBtn">Checkout via WhatsApp</button>
+    <div class="err" id="err"></div>
+  </div>
+</aside>
+
+<script src="js/script.js"></script>
+</body>
+</html>
